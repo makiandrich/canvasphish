@@ -1,0 +1,5 @@
+// Customizing Login to include placeholder text and username change message
+
+$('body.ic-Login-Body input#pseudonym_session_unique_id').attr("placeholder", "mad.jack@western.edu");
+$('body.ic-Login-Body input#pseudonym_session_password').attr("placeholder", "password");
+$('form#login_form').prepend('<div style="padding:10px;font-weight:700;max-width:100%;text-align:center; color:#000000;">Please log in with your email address.</div>');
